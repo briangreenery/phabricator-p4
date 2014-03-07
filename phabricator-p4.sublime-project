@@ -1,0 +1,9 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "name": "phabricator-p4"
+        }
+    ]
+}
