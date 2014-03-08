@@ -7,8 +7,8 @@ cd /opt/phabricator-p4
 
 sudo apt-get -qq update
 
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password bigfix'
-sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password bigfix'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password ohana'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password ohana'
 sudo apt-get -y install mysql-server
 
 sudo apt-get -y install \
@@ -40,7 +40,7 @@ sudo service apache2 restart
 sudo service ufw stop
 
 sudo /opt/phabricator-p4/phabricator/bin/config set mysql.user root
-sudo /opt/phabricator-p4/phabricator/bin/config set mysql.pass bigfix
+sudo /opt/phabricator-p4/phabricator/bin/config set mysql.pass ohana
 sudo /opt/phabricator-p4/phabricator/bin/storage upgrade --force
 
 sudo /opt/phabricator-p4/phabricator/bin/config set phabricator.base-uri 'http://phabricator-p4.ohana:8080/'
