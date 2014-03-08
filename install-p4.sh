@@ -31,4 +31,4 @@ mv p4 /usr/local/bin
 
 # Set environment
 
-echo 'export P4PORT=phabricator-p4.ohana:1666' >> ~/.profile
+echo 'export P4PORT=phabricator-p4.ohana:1666' >> /home/vagrant/.profile
