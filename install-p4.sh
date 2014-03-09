@@ -21,7 +21,7 @@ exec /opt/p4/p4d
 OHANA_MEANS_FAMILY
 
 mv p4d.conf /etc/init
-start p4d 
+start p4d
 
 # Get perforce client
 
@@ -50,3 +50,4 @@ OHANA_MEANS_FAMILY
 
 echo "export P4PORT=$P4PORT" >> /home/vagrant/.profile
 mkdir /home/vagrant/depot
+chown vagrant:vagrant /home/vagrant/depot
