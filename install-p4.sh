@@ -26,7 +26,7 @@ start p4d
 # Get perforce client
 
 wget http://filehost.perforce.com/perforce/r13.3/bin.linux26x86_64/p4
-chmod +x p4d p4
+chmod +x p4
 mv p4 /usr/local/bin
 
 # Create vagrant p4 user
