@@ -4,6 +4,7 @@ The objective of this project is to add Perforce support to Phabricator.
 
 ```bash
 git clone git@github.com:gnawhleinad/phabricator-p4.git
+cd phabricator-p4
 vagrant up
 ```
 
